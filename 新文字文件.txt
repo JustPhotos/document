@@ -1,0 +1,36 @@
+if (GameConstants.isBeginnerJob(job)) { // Beginner
+			maxhp += Randomizer.rand(12, 16);
+			maxmp += Randomizer.rand(10, 12);
+		} else if (job >= 3100 && job <= 3112) { // Warrior
+			maxhp += Randomizer.rand(48, 52);
+		} else if ((job >= 100 && job <= 132) || (job >= 1100 && job <= 1111)) { // Warrior
+			maxhp += Randomizer.rand(48, 52);
+			maxmp += Randomizer.rand(4, 6);
+		} else if ((job >= 200 && job <= 232) || (job >= 1200 && job <= 1211)) { // Magician
+			maxhp += Randomizer.rand(10, 14);
+			maxmp += Randomizer.rand(48, 52);
+		} else if (job >= 3200 && job <= 3212) { //battle mages get their own little neat thing
+			maxhp += Randomizer.rand(20, 24);
+			maxmp += Randomizer.rand(42, 44);
+		} else if ((job >= 300 && job <= 322) || (job >= 400 && job <= 434) || (job >= 1300 && job <= 1311) || (job >= 1400 && job <= 1411) || (job >= 3300 && job <= 3312) || (job >= 2300 && job <= 2312)) { // Bowman, Thief, Wind Breaker and Night Walker
+			maxhp += Randomizer.rand(20, 24);
+			maxmp += Randomizer.rand(14, 16);
+		} else if ((job >= 510 && job <= 512) || (job >= 1510 && job <= 1512)) { // Pirate
+			maxhp += Randomizer.rand(37, 41);
+			maxmp += Randomizer.rand(18, 22);
+		} else if ((job >= 500 && job <= 532) || (job >= 3500 && job <= 3512) || job == 1500) { // Pirate
+			maxhp += Randomizer.rand(20, 24);
+			maxmp += Randomizer.rand(18, 22);
+		} else if (job >= 2100 && job <= 2112) { // Aran
+			maxhp += Randomizer.rand(50, 52);
+			maxmp += Randomizer.rand(4, 6);
+		} else if (job >= 2200 && job <= 2218) { // Evan
+			maxhp += Randomizer.rand(12, 16);
+			maxmp += Randomizer.rand(50, 52);
+		} else if (job >= 5100 && job <= 5112) { // Evan
+			maxhp += Randomizer.rand(48, 52);
+			maxmp += Randomizer.rand(4, 6);
+		} else { // GameMaster
+			maxhp += Randomizer.rand(50, 100);//its already there lol
+			maxmp += Randomizer.rand(50, 100);
+		}
